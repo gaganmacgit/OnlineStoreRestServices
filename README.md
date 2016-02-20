@@ -15,11 +15,11 @@ Once deployed over Tomcat, start the tomcat instance.This will open up the Embed
 
 ## Endpoints
 
- 1.For viewing all the product categories , GET URL : /rest/productcategories
- 2.For viewing a specific product category, GET URL : /rest/productcategories/id
- 3.For viewing all the products in DB, GET URL :/rest/products
- 4.For viewing a specific product based on productcode, GET URL : /rest/products/productcode
- 5.For creating an empty user cart for a user, POST URL : /rest/user/cart sample payload is shown below:
+ 1. For viewing all the product categories , GET URL : /rest/productcategories
+ 2. For viewing a specific product category, GET URL : /rest/productcategories/id
+ 3. For viewing all the products in DB, GET URL :/rest/products
+ 4. For viewing a specific product based on productcode, GET URL : /rest/products/productcode
+ 5. For creating an empty user cart for a user, POST URL : /rest/user/cart sample payload is shown below:
 
 ```
 <user>
@@ -27,7 +27,7 @@ Once deployed over Tomcat, start the tomcat instance.This will open up the Embed
   <email>dummyuser@gmail.com</email>
 </user>
 ```
- 6.For Adding an Item to the cart , POST URL : /rest/user/emailid/cart/product
+ 6. For Adding an Item to the cart , POST URL : /rest/user/emailid/cart/product
  emailId is the user emailid , uniquely identifying the user in application sample payload
    
 ```xml
@@ -38,8 +38,8 @@ Once deployed over Tomcat, start the tomcat instance.This will open up the Embed
     </cartitem>
    ```
    
- 7.For viewing the products present in the user cart at any time , GET URL : /rest/user/emailid/cart/product
- 8.For finally checkout the cart, POST URL /rest/user/emailid/cart/checkout
+ 7. For viewing the products present in the user cart at any time , GET URL : /rest/user/emailid/cart/product
+ 8. For finally checkout the cart, POST URL /rest/user/emailid/cart/checkout
 
 
 For all the above URL, support for both JSON and XML type of data in Response is supported.This can be done by changing the Accept header to either application/json or application/xml.Once the application is deployed on tomcat , user can use POSTMAN chrome plugin for verifying the above functionalities.
