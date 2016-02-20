@@ -21,12 +21,13 @@ Once deployed over Tomcat, start the tomcat instance.This will open up the Embed
  4. For viewing a specific product based on productcode, GET URL : /rest/products/productcode
  5. For creating an empty user cart for a user, POST URL : /rest/user/cart sample payload is shown below:
 
-```
+```xml
 <user>
   <name>dummyuser</name>
   <email>dummyuser@gmail.com</email>
 </user>
 ```
+
  6. For Adding an Item to the cart , POST URL : /rest/user/emailid/cart/product
  emailId is the user emailid , uniquely identifying the user in application sample payload
    
